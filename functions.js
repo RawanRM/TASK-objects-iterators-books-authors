@@ -21,7 +21,7 @@ function getBookById(bookId, books) {
  * - returns undefined if no matching author is found
  ****************************************************************/
 function getAuthorByName(authorName, authors) {
-  return authors.find(author=> author.name.toLowerCase());
+  return authors.find(author=> author.name.toLowerCase() === authorName.toLowerCase());
 }
 // console.log(getAuthorByName("J.K. Rowling", authors));
 
