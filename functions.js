@@ -9,7 +9,7 @@ const books = require("./books.json");
  * - returns undefined if no matching book is found
  ****************************************************************/
 function getBookById(bookId, books) {
-  // Your code goes here
+  return books.find(book=> book.id === bookId);
 }
 // console.log(getBookById(12, books));
 
@@ -21,7 +21,7 @@ function getBookById(bookId, books) {
  * - returns undefined if no matching author is found
  ****************************************************************/
 function getAuthorByName(authorName, authors) {
-  // Your code goes here
+  return authors.find(author=> author.name.toLowerCase());
 }
 // console.log(getAuthorByName("J.K. Rowling", authors));
 
