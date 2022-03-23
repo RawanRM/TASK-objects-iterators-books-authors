@@ -32,9 +32,10 @@ function getAuthorByName(authorName, authors) {
  *    [{ author: <NAME>, bookCount: <NUMBER_OF_BOOKS> }]
  ****************************************************************/
 function bookCountsByAuthor(authors) {
-  // Your code goes here
+ return authors.map(auth=>({author: auth.name, bookCount: auth.books.length}));
+  
 }
-// console.log(bookCountsByAuthor(authors));
+//console.log(bookCountsByAuthor(authors));
 
 /**************************************************************
  * booksByColor(books):
